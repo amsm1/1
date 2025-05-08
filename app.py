@@ -6,7 +6,7 @@ from flask_cors import CORS
 app = Flask(__name__)  
 CORS(app, resources={r"/summarize": {"origins": "*"}})  
   
-API_URL = "https://api-inference.huggingface.co/models/facebook/bart-large-cnn"  
+API_URL = "https://api-inference.huggingface.co/models/ams20203020/facebook_bart_large_cnn"  
 TIMEOUT = 60  
 MIN_WORD_COUNT = 10  # تغيير الشرط إلى عدد الكلمات  
   
