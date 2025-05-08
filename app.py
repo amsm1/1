@@ -7,7 +7,7 @@ app = Flask(__name__)
 CORS(app, resources={r"/summarize": {"origins": "*"}})  
   
 API_URL = "https://api-inference.huggingface.co/models/facebook/bart-large-cnn"  
-TIMEOUT = 30  
+TIMEOUT = 60  
 MIN_WORD_COUNT = 10  # تغيير الشرط إلى عدد الكلمات  
   
 @app.route('/')  
